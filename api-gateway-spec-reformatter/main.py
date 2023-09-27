@@ -16,7 +16,7 @@ if __name__ == '__main__':
   api_spec["info"]["title"] = "API Cisdi Talenta Integrations"
   api_spec["info"]["description"] = "Integrasi data Talenta dan CISDI"
   api_spec["info"]["version"] = "1.0.0"
-  api_spec["x-google-backend"] = {'address': os.getenv("API_URL")}
+  api_spec["x-google-backend"] = {'address': os.getenv("API_URL"), "deadline": 60}
   api_spec["schemes"] = ['https']
   api_spec["produces"] = ['application/json']
   for x in api_spec["paths"]:
